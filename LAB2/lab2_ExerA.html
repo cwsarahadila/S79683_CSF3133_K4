@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Programming Workshop</title>
+</head>
+<body>
+
+<!-- header -->
+<header>
+<h1> Programming Workshop : Code.Build.Lunch </h1>
+</header>
+
+<!-- navigation-->
+<nav>
+    <a href="#schedule" > Schedule </a> | <a href="#Register"> Register</a> | 
+     <a  href="#about" >About</a>
+</nav>
+
+<!-- section 1 -->
+ <section id = "about">
+    <h2> About the Event </h2>
+
+    <article> 
+        <h3> Guest Speaker : Dr. Affan  </h3>
+        <p> An expert in computer science and software development who  will share his experiences.</p>
+    </article>
+
+    <article>
+    <h3> Coding Live Session</h3>
+    <p> All participants will engage in live coding exercises
+        and problem-solving challenges.</p>
+</article>
+    </section>
+
+<hr>
+
+<section id = "schedule">
+    <h2>Event Schedule</h2>
+ 
+<!-- schedule table-->
+    <table border="1">
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Venue</th>
+            <th>Person in Charge</th>
+        </tr>
+
+        <tr>
+            <td>8.30 AM - 09.00 AM </td>
+            <td> Registration & Briefing</td>
+            <td rowspan ="2"> Main Hall</td>
+            <td>Sarah</td>
+            
+        </tr>
+        <tr>
+            <td>09:00 AM - 10:30 AM</td>
+            <td>Keynote Speech & Introduction</td>
+            <td>Dr. Affan</td>
+        </tr>
+        <tr>
+            <td> 10.30 AM  - 12.30 PM</td>
+            <td> Coding Live Session</td>
+            <td> Lab Computer 1 </td>
+            <td> Uthman </td>
+        </tr>
+
+        <tr>
+            <td> 12.30 PM - 3.00 PM</td>
+            <td colspan ="3">LUNCH BREAK </td>
+        </tr>
+        <tr>
+            <td> 3.00 PM  - 5.00 PM</td>
+            <td> Coding Live Session</td>
+            <td> Lab Computer 1 </td>
+            <td> Uthman </td>
+        </tr>
+        <tr>
+            <td> 5.00 PM - 6.00 PM</td>
+            <td> Closing Ceremony </td>
+            <td> Main Hall</td>
+            <td> Sarah </td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<!-- Section 3 : Registration Form-->
+ <section id = "Register">
+    <h2> Registration Form </h2>
+    <form action = "register.html" method="post"> 
+
+    <label for="fullName">Full Name :</label><br>
+    <input type = "text" id="fullName" name="fullName"><br><br>
+
+    <label for="MatricNumber">Matric Number :</label><br>
+    <input type = "text" id = "MatricNumber" name="MatricNumber"><br><br>
+
+    <label for="E-mail">E-mail :</label><br>
+    <input type ="text" id="E-mail" name ="E-mail"><br><br>
+
+<!--Radio Button to choose Year-->
+    <label>Year of Study(Year 1 – Year 4)</label><br>
+    <input type="radio" id="Year1" name="Year" value="Year 1 ">
+    <label for="Year1">Year 1</label><br>
+    <input type="radio" id="Year2" name="Year" value="Year 2 ">
+    <label for="Year2">Year 2</label><br>
+    <input type="radio" id="Year3" name="Year" value="Year 3 ">
+    <label for="Year3">Year 3</label><br>
+    <input type="radio" id="Year4" name="Year" value="Year 4 "> 
+    <label for="Year4">Year 4</label><br><br>
+
+
+<!-- Checkboxes to choose sessions-->
+    <label>Sessions To Join</label><br>
+    <input type="checkbox" id="Session1" 
+     name="Session 1 " value="Keynote Speech & Introduction">
+    <label for="Session1" >Keynote Speech & Introduction</label><br>
+    <input type="checkbox" id="Session2" 
+    name="Session 2 " value="Coding Live Session">
+    <label for="Session2">Coding Live Session</label><br>
+    <input type="checkbox" id="Session3" 
+     name="Session 3" value="Closing Ceremony">
+    <label for="Session3">Closing Ceremony</label><br><br>
+
+<!--drop-down list to choose Faculty -->
+    <label for="Faculty">Faculty:</label><br>
+    <select id="Faculty" name="Faculty">
+        <option value ="FSKM">FSKM</option>
+        <option value ="FPEPS">FPEPS</option>
+        <option value ="FSSM">FSSM</option>
+        <option value ="FTKK">FTKK</option>
+    </select><br><br>
+ 
+    <input type ="submit" value="Submit">  
+</form>
+ </section>
+
+ <!-- Footer-->
+ <footer>
+    <p> Organised by the Faculty Computer Science </p>
+    <p>© 2026 Faculty Event Organising Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
