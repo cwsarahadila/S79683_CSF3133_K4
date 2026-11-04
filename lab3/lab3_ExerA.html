@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Bakery Online Order</title>
+</head>
+<body>
+<div id="navigation">
+<a href="#home">Home</a> | <a href="#product">Product List</a> | <a href="#order">Order Now</a>
+<h1>Campus Bakery</h1>
+<span>We bake with love</span><br><br>
+</div>
+
+<div id="Content">
+<h2>Introduction</h2>
+<p><strong>Welcome to the Campus Bakery!</strong> We offer <em>freshly baked and delicious </em>
+treats that made with love:</p>
+<span>Let's enjoy our sweet moments with every bite!</span><br><br>
+<h2>Price List</h2>
+<p>Orders > 10 pieces get a free drink</p>
+<ul>
+<li>Dubai Chewy Cookies - RM25.00</li>
+<li>Cupcakes - RM3.00</li>
+<li>Cake Slices - RM5.00</li>
+</ul>
+
+<h2>Feel Free to Fill Up This Form For Order !</h2>
+<form>
+Customer Name: <input type="text" name="Cusname" placeholder="please enter your name" required autofocus><br><br>
+
+Phone number: <input type="tel" name="phoneNum" required><br><br>
+
+E-mail: <input type="email" name="E-mail" required><br><br>
+
+Pick-up Date: <input type="date" name="Date"><br><br>
+
+Pick-up Time: <input type="time" name="Time"><br><br>
+
+<label for="flavour">Our top Flavours:</label>
+<input type="text" id="flavour" name="flavour" list="flavour-list">
+<datalist id="flavour-list">
+    <option value="chocolate">
+    <option value="strawberry">
+    <option value="matcha">
+    <option value="coconut">
+</datalist><br><br>
+
+Icing Colour: <input type="color" name="color"><br><br>
+
+Sweetness Range: <input type="range" min="1" max="5" step="1"><br><br>
+
+<input type="submit" value="Send">
+</form>
+</div>
+
+<h2>Price Calculator</h2>
+<form oninput="total.value = (parseInt(cupcakes.value || 0) * 3) + (parseInt(cakeSlices.value || 0) * 5)">
+<label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+<input id="cupcakes" type="number" value="0" min="0"><br><br>
+
+<label for="cakeSlices">Cake Slices (RM 5.00 each):</label>
+<input id="cakeSlices" type="number" value="0" min="0"><br><br>
+ RM = 
+<output name="total" for="cupcakes cakeSlices">
+</output>
+
+</form>
+<footer>
+<p>&copy;2026 Campus Bakery. All Rights Reserved.</p>
+<p>Freshly baked with love!</p>
+</footer>
