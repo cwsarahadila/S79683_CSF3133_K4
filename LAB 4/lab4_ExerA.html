@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="utf-8">
+<meta name = "viewport" content ="width=device-width,initial-scale=1.0">
+<title>Visit Terengganu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body{
+        font-family : Arial,sans-serif;
+        margin:0;
+        padding: 0;
+        background-color: #f4f4f4;
+
+    }
+    .caption {
+        font-style :italic;
+        color :#555;
+        text-align :center;
+    }
+</style>
+</head>
+
+<body>
+
+<!--Header section-->
+<header>
+    <h1>Visit Terengganu – Tourism Promotion Page</h1>
+</header>
+
+<!--Navigation Bar-->
+<nav> 
+    <ul>
+        <li><a href ="#destinations">Destination</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href ="#trip">Trip</a></li>
+    </ul>
+</nav>
+
+
+<section id="destinations">
+    <h2>Featured Destination</h2>
+
+    <article class="card" > 
+        <h3> Redang Island</h3>
+        <p> A crystal water-clear  beach</p>
+        <p class="price">
+        <span class = "old-price">RM 450</span>
+        <span class ="new-price ">RM 350</span>
+    </p>
+    </article>
+
+    <article class ="card">
+        <h3> Crystal Mosque</h3>
+        <P> Most beautiful mosque in Terengganu</P>
+        <p class ="price">
+            <span class ="old-price">RM 50</span>
+            <span class ="new-price">Free</span>
+        </p>
+    </article>
+
+    <article class ="card">
+        <h3>Pantai Batu Burok</h3>
+        <p> Enjoy the sea view</p>
+        <p class="price">
+            <span class ="old-price">RM 25</span>
+            <span class ="new-price">RM 15</span>
+        </p>
+    </article>
+</section>
+
+
+<section id ="video" class="center">
+    <h2>Video Promotion</h2>
+    <figure>
+        <video controls>
+            <source src="terengganu.mp4" type="video/mp4">
+            Browsers do not support this video.
+        </video>
+        <figcaption class="caption"> Let's see the beautiful of Terengganu</figcaption>
+        
+    </figure>
+</section>
+
+<!--Form-->
+<section id="trip">
+    <h2>Seat Availability And Form Trip </h2>
+    <p> Total Seat </p>
+    <meter min ="0" max="40" value="28"></meter>
+    <p> 28 out of 40 is already booked!</p>
+
+
+    <form class="trip-form" action="#" method="POST">
+    <h3>Form Trip</h3>
+
+    <label for="name">Name : </label><br>
+     <input type="text" id="name" name="name" required><br><br>
+
+   <label for="email">Email :</label><br>
+   <input type ="email" id="email" name="email" required><br><br>
+
+   <label>Traveller Type :</label><br>
+   <input type="radio" id="student" name ="traveller-type" value="student">
+   <label for ="student">Student</label>
+   <input type="radio" id="staff" name="traveller_type" value="Staff">
+  <label for="staff">Staff</label><br>
+  <input type="radio" id="public" name="traveller_type" value="Public">
+<label for="public">Public</label><br><br>
+
+<label>Interests:</label><br>
+            <input type="checkbox" id="interest_islands" name="interests" value="Islands">
+            <label for="interest_islands">Islands</label><br>
+            <input type="checkbox" id="interest_food" name="interests" value="Food">
+            <label for="interest_food">Food</label><br>
+            <input type="checkbox" id="interest_culture" name="interests" value="Culture">
+            <label for="interest_culture">Culture</label><br>
+            <input type="checkbox" id="interest_nature" name="interests" value="Nature">
+            <label for="interest_nature">Nature</label><br><br>
+
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+<footer>
+    <p> &copy; 2026 Visit Terengganu Tourism</p>
+    <address>
+        Contact us at : <a href="mailto:visit@Terennganu.gov.my">visit@Terennganu.gov.my</a>
+    </address>
+</footer>
+
+</body>
+    </html>
+
+
+
